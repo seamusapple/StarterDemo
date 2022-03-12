@@ -12,37 +12,112 @@
   </head>
   <body>
     <div class="app">
-      <div class="header">
-        <div class="site-topbar">
-          <div class="container">
-            <div class="topbar-nav">
-              <a href="index.html">小米商城</a>
-              <span class="sep">|</span>
-              <a href="MIUI" target="_blank">MIUI</a>
-              <span class="sep">|</span>
-              <a href="IoT" target="_blank">IoT</a>
-              <span class="sep">|</span>
-              <a href="CloudService" target="_blank">云服务</a>
-              <span class="sep">|</span>
-              <a href="StarDigit" target="_blank">天星数科</a>
-              <span class="sep">|</span>
-              <a href="YouPin" target="_blank">有品</a>
-              <span class="sep">|</span>
-              <a href="OpenCloud" target="_blank">小爱开放平台</a>
-              <span class="sep">|</span>
-              <a href="Company" target="_blank">企业团购</a>
-              <span class="sep">|</span>
-              <a href="AptitudeImage" target="_blank">资质证照</a>
-              <span class="sep">|</span>
-              <a href="Aptitude" target="_blank">协议规则</a>
-              <span class="sep">|</span>
-              <a href="DownloadApp" target="_blank">下载app</a>
-              <span class="sep">|</span>
-              <a href="SelectLocation">Select Location</a>
+      <div>
+        <div class="header">
+          <div class="site-topbar">
+            <div class="container">
+              <div class="topbar-nav">
+                <a href="index.html">小米商城</a>
+                <span class="sep">|</span>
+                <a href="MIUI" target="_blank">MIUI</a>
+                <span class="sep">|</span>
+                <a href="IoT" target="_blank">IoT</a>
+                <span class="sep">|</span>
+                <a href="CloudService" target="_blank">云服务</a>
+                <span class="sep">|</span>
+                <a href="StarDigit" target="_blank">天星数科</a>
+                <span class="sep">|</span>
+                <a href="YouPin" target="_blank">有品</a>
+                <span class="sep">|</span>
+                <a href="OpenCloud" target="_blank">小爱开放平台</a>
+                <span class="sep">|</span>
+                <a href="Company" target="_blank">企业团购</a>
+                <span class="sep">|</span>
+                <a href="AptitudeImage" target="_blank">资质证照</a>
+                <span class="sep">|</span>
+                <a href="Aptitude" target="_blank">协议规则</a>
+                <span class="sep">|</span>
+                <a href="DownloadApp" target="_blank">下载app</a>
+                <span class="sep">|</span>
+                <a href="SelectLocation">Select Location</a>
+              </div>
+              <div class="topbar-cart" id="J_miniCardTrigger" onmouseover="hover();" onmouseout="unhover();">
+                <a href="buyCart" class="cart-mini" id="J_miniCartBtn">
+                  <em><img src="images/iconcartnormal.png" alt="iconcart" id="iconcart-image"></em>购物车<span
+                    class="cart-minu-num J_cardNum"
+                  >（0）</span>
+                </a>
+
+                <div class="cart-menu" id="J_miniCartMenu">
+                  <div class="menu-content">
+                    <div class="loading"><div class="loader"></div></div>
+                    <ul class="cart-list hide" id="J_miniCartList"></ul>
+                    <div class="cart-total clearfix hide" id="J_miniCartListTotal"></div>
+                    <div class="msg msg-error hide"></div>
+                    <div class="msg msg-empty hide">
+                      购物车中还没有商品，赶紧选购吧!
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="topbar-info" id="J_siteUserInfo">
+                <a href="Login" class="link">登录</a>
+                <span class="sep">|</span>
+                <a href="Register" class="link">注册</a>
+                <span class="sep">|</span>
+                <span class="message">
+                  <a href="NotificationCenter" class="J_needAgreement">
+                    消息通知
+                  </a>
+                </span>
+              </div>
             </div>
+            <div id="J_globalSiteLinks" style="display: none"></div>
+          </div>
+
+          <div class="site-header">
+            <div class="container"></div>
+            <div
+              id="J_navMenu"
+              class="header-nav-menu slide-up"
+              style="display: none"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-hero-container container">
+        <div class="home_hero"></div>
+      </div>
+
+      <div class="page-main home-main">
+        <div class="container"></div>
+      </div>
+      
+      <div ref="J_siteFooter">
+        <div>
+          <div class="site-footer">
+            <div class="container"></div>
+          </div>
+          <div class="site-info">
+            <div class="container"></div>
+            <div class="slogan ir">探索黑科技，小米为发烧而生</div>
           </div>
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      function hover()  {
+        var img = document.getElementById("iconcart-image")
+        img.setAttribute("src", 'images/iconcartactive.png')
+      }
+
+      function unhover() {
+        var img = document.getElementById("iconcart-image")
+        img.setAttribute("src", 'images/iconcartnormal.png')
+      }
+    </script>
   </body>
 </html>
