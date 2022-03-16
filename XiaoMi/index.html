@@ -2088,7 +2088,39 @@
       </div>
 
       <div class="home-hero-container container">
-        <div class="home_hero"></div>
+        <div class="home-hero">
+          <div class="swiper-container home-hero-swiper swiper-no-swiper" id="J_homeSwiper">
+            <div class="swiper-wrapper" id="J_swiper-wrapper">
+              <div class="swiper-slide">
+                <a target="_blank" href="https://www.mi.com/a/h/23227.html?sign=516a5c51ad3add336d28e7bf1cc9d46b">
+                  <img class="swiper-img" src="images/swipeimg1.jpeg" alt="">
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a target="_blank" href="https://www.mi.com/mi12pro">
+                  <img class="swiper-img" src="images/swipeimg2.webp" alt="">
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a target="_blank" href="https://www.mi.com/a/h/23234.html?sign=6746307cf1afd09aa828b8309537acb7">
+                  <img class="swiper-img" src="images/swipeimg3.jpeg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="home-hero-sub row">
+
+        </div>
       </div>
 
       <div class="page-main home-main">
@@ -2117,6 +2149,41 @@
       function unhover() {
         var img = document.getElementById("iconcart-image")
         img.setAttribute("src", 'images/iconcartnormal.png')
+      }
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        // index 索引 len 长度
+        var index = 0, len;
+        var swiperSlide = document.getElementsByClassName("swiper-slide");
+        var imgbox = document.getElementsByClassName("swiper-img");
+        var swiperWrapper = document.getElementById("J_swiper-wrapper");
+        len = imgbox.length;
+        imgbox[index].style.display = "block";
+        function changeImg() {
+          index++;
+          if (index >= len) {
+            index = 0;
+          }
+          for (var i = 0; i < len; i++) {
+            imgbox[i].style.display = "none"
+            swiperSlide[i].style.display = "none"
+          }
+          imgbox[index].style.display = "block";
+          swiperSlide[index].style.display = "block";
+        }
+        var timeout = setInterval(changeImg,3000);
+
+        // 鼠标放上去停止轮询
+        swiperWrapper.onmouseover = function () {
+          clearInterval(timeout);
+        }
+
+        // 鼠标移开继续轮询
+        swiperWrapper.onmouseout = function () {
+          timeout = setInterval(changeImg,3000);
+        }
       }
     </script>
   </body>
