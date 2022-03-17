@@ -625,6 +625,47 @@ a:hover {
   transition-property: transform, -webkit-transform;
 }
 
+.home-hero-swiper .swiper-pagination {
+  width: 400px;
+  left: auto;
+  right: 30px;
+  bottom: 20px;
+  text-align: right;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 10;
+}
+
+.swiper-button {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  margin: 0 4px;
+}
+
+.swiper-button:hover {
+  opacity: 1;
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.swiper-button:focus {
+  outline: none;
+}
+
 .ir {
   display: block;
   text-align: left;

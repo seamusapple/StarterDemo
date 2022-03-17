@@ -2110,7 +2110,11 @@
               </div>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination">
+              <a href="#" class="swiper-button" id="swiper-button-1"></a>
+              <a href="#" class="swiper-button" id="swiper-button-2"></a>
+              <a href="#" class="swiper-button" id="swiper-button-3"></a>
+            </div>
 
             <div class="swiper-button-prev"></div>
 
@@ -2159,8 +2163,13 @@
         var swiperSlide = document.getElementsByClassName("swiper-slide");
         var imgbox = document.getElementsByClassName("swiper-img");
         var swiperWrapper = document.getElementById("J_swiper-wrapper");
+        var swiperButtons = document.getElementsByClassName("swiper-button");
         len = imgbox.length;
         imgbox[index].style.display = "block";
+        swiperSlide[index].style.display = "block";
+        swiperButtons[index].style.setProperty('background', '#fff');
+        swiperButtons[index].style.setProperty('opacity', '1');
+        swiperButtons[index].style.setProperty('border-color', 'rgba(0, 0, 0, 0.4)');
         function changeImg() {
           index++;
           if (index >= len) {
@@ -2169,9 +2178,15 @@
           for (var i = 0; i < len; i++) {
             imgbox[i].style.display = "none"
             swiperSlide[i].style.display = "none"
+            swiperButtons[i].style.setProperty('background', 'rgba(0, 0, 0, 0.4)');
+            swiperButtons[i].style.setProperty('opacity', '0.8');
+            swiperButtons[i].style.setProperty('border-color', 'hsla(0, 0%, 100%, 0.3)');
           }
           imgbox[index].style.display = "block";
           swiperSlide[index].style.display = "block";
+          swiperButtons[index].style.setProperty('background', '#fff');
+          swiperButtons[index].style.setProperty('opacity', '1');
+          swiperButtons[index].style.setProperty('border-color', 'rgba(0, 0, 0, 0.4)');
         }
         var timeout = setInterval(changeImg,3000);
 
