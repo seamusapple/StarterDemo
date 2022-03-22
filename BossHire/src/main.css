@@ -1,0 +1,49 @@
+body {
+  font: 14px/1.5 arial, verdana, helvetica, 'PingFang SC', 'HanHei SC', STHeitiSC-Light, Miscrosoft Yahei, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #f6f6f8;
+  min-width: 1184px;
+  font-size: 14px;
+  color: #414a60;
+}
+
+.wrap {
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  height: 49px;
+  display: block;
+}
+
+.header-nav .header-nav-list {
+  position: relative;
+  list-style-type: none;
+}
+
+.header-nav .site-nav {
+  float: left;
+}
+
+.header-nav .user-nav {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00d7c6;
+}
