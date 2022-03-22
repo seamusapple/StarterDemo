@@ -5,6 +5,7 @@ body {
   min-width: 1184px;
   font-size: 14px;
   color: #414a60;
+  margin: 0 auto;
 }
 
 .wrap {
@@ -22,12 +23,37 @@ body {
   list-style-type: none;
 }
 
-.header-nav .site-nav {
+.header-nav li {
+  padding: 0 5px;
+  line-height: 49px;
+}
+
+.header-nav ul {
+  margin: 0;
+}
+
+.header-nav .site-nav li {
   float: left;
 }
 
-.header-nav .user-nav {
+.header-nav .user-nav li {
   float: right;
+}
+
+.header-nav-list-logo {
+  padding: 6px 0 0 0;
+}
+
+.header-nav-list-logo a {
+  display: block;
+  width: 110px;
+  height: 36px;
+  background: url(../images/logo.png) 3px 7px no-repeat;
+  background-size: 105px 19px;  
+}
+
+.header-nav-list-logo span {
+  display: none;
 }
 
 .clearfix:before,
@@ -40,10 +66,10 @@ body {
   clear: both;
 }
 
-a, a:hover {
+li a, a:hover {
   text-decoration: none;
 }
 
-a:hover {
+li a:hover {
   color: #00d7c6;
 }
