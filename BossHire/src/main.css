@@ -171,6 +171,43 @@ body {
   cursor: pointer;
 }
 
+.header-nav .header-nav-user .header-nav-user-buttons .new {
+  height: 14px;
+  position: absolute;
+  top: -9px;
+  right: -20px;
+  padding: 0 6px;
+  line-height: 14px;
+  background-color: #ef505e;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.nav-find::after, 
+.nav-school-new::after {
+  content: "";
+  width: 30px;
+  height: 14px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  line-height: 13px;
+  background-color: #ef505e;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.nav-find::after {
+  content: "hot";
+}
+
+.nav-school-new::after {
+  content: "New";
+}
+
 ul, ol ,li {
   list-style: none;
 }
