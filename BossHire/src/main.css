@@ -8,6 +8,14 @@ body {
   margin: 0 auto;
 }
 
+body {
+  background: #f6f6f8;
+  min-width: 1184px;
+  line-height: 26px;
+  color: #414a60;
+  font-size: 14px;
+}
+
 .wrap {
   margin: 0 auto;
   position: relative;
@@ -208,6 +216,87 @@ body {
   content: "New";
 }
 
+.fast-register {
+  margin: 0 auto;
+  width: 100%;
+  height: 120px;
+  display: block;
+  background-color: #00d7c6;
+  position: relative;
+  z-index: 1005;
+}
+
+.register-container {
+  width: 1084px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.fast-register .icon-tip {
+  float: left;
+  height: 120px;
+  margin: 0 35px 0 0;
+}
+
+.fast-register .register-form-box {
+  float: right;
+  position: relative;
+}
+.fast-register .icon-tip2 {
+  height: 26px;
+  margin: 22px 0 8px 0;
+}
+
+.fast-register .register-input-box {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.fast-register .register-input-box input {
+  padding: 6px 10px 5px 10px;
+  height: 25px;
+  border: none;
+  line-height: 25px;
+  background: #fff;
+  box-shadow: 1px 0 4px 0 rgb(86 174 164 / 50%);
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.fast-register .register-input-box input.register-ipt-phone {
+  width: 150px;
+}
+
+.fast-register .register-input-box .show-code-box {
+  color: #54cbc4;
+  font-size: 12px;
+  position: absolute;
+  right: 15px;
+  top: 6px;
+}
+
+.fast-register .register-btn {
+  min-width: 80px;
+  box-sizing: content-box;
+  font-size: 12px;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  height: 34px;
+  line-height: 34px;
+}
+
+input[type=tel] {
+  -webkit-appearance: none;
+}
+input[type=text] {
+  padding: 1px 2px;
+}
+
+input {
+  outline: 0;
+}
+
 ul, ol ,li {
   list-style: none;
 }
@@ -235,10 +324,9 @@ a:hover {
   color: #00d7c6;
 }
 
-.header-nav .user-nav li {
-  float: right;
+img {
+  border: none;
 }
-
 
 .clearfix:before,
 .clearfix:after {
