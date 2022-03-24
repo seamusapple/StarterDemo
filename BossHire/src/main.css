@@ -226,7 +226,7 @@ body {
   z-index: 1005;
 }
 
-.register-container {
+.inner-container {
   width: 1084px;
   height: 120px;
   margin: 0 auto;
@@ -284,6 +284,23 @@ body {
   border: 1px solid #fff;
   height: 34px;
   line-height: 34px;
+}
+
+.fast-search {
+  position: relative;
+  z-index: 1003;
+}
+
+.fast-search .earch-box {
+  width: 934px;
+  margin: 0 auto;
+}
+
+.search-box {
+  padding-top: 20px;
+  width: 884px;
+  position: relative;
+  font-size: 13px;
 }
 
 input[type=tel] {
