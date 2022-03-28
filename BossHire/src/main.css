@@ -1,3 +1,11 @@
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+}
+
 body {
   font: 14px/1.5 arial, verdana, helvetica, 'PingFang SC', 'HanHei SC', STHeitiSC-Light, Miscrosoft Yahei, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -291,7 +299,7 @@ body {
   z-index: 1003;
 }
 
-.fast-search .earch-box {
+.fast-search .search-box {
   width: 934px;
   margin: 0 auto;
 }
@@ -303,13 +311,137 @@ body {
   font-size: 13px;
 }
 
+.fast-search .search-form {
+  height: 50px;
+}
+
+.search-form {
+  position: relative;
+  zoom: 1;
+  z-index: 1000;
+}
+
+.fast-search .search-form-con {
+  width: 794px;
+  box-shadow: 0 0 6px rgb(0 0 0 / 13%);
+}
+
+.search-form-con {
+  float: left;
+}
+
+.fast-search .position-sel {
+  width: 99px;
+  float: left;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  border-color: #fff;
+  border-left: 1px solid #fff;
+}
+
+.position-sel {
+  display: block;
+  width: 68px;
+  height: 28px;
+  border-left: none;
+  line-height: 30px;
+  float: right;
+  padding: 6px 15px 8px 15px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.fast-search .position-sel .label-text {
+  width: 80px;
+}
+
+.position-sel .label-text {
+  width: 52px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.fast-search .position-sel b {
+  font-size: 16px;
+  width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.position-sel b {
+  font-weight: 400;
+  font-size: 13px;
+  color: #61687c;
+}
+
+.position-sel .icon-arrow-down {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+}
+
+.search-box .icon-arrow-down {
+  background-position: 0 -2044px;
+}
+
+.icon-arrow-down {
+  width: 16px;
+  height: 16px;
+  background-position: 2px-544px;
+}
+
+.icon-arrow-down {
+  display: inline-block;
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+}
+
+.fast-search .search-form .ipt-wrap {
+  height: 48px;
+  border-color: #fff;
+}
+
+.search-form .ipt-wrap {
+  background: #fff;
+  border: 1px solid #53cac3;
+  border-left: none;
+  border-right: none;
+  height: 42px;
+  overflow: hidden;
+}
+
+.ipt-wrap {
+  position: relative;
+}
+
+.fast-search .ipt-search {
+  width: 626px;
+  font-size: 16px;
+  padding: 10px 19px;
+}
+
+.ipt-search {
+  width: 323px;
+  height: 28px;
+  line-height: 30px;
+  padding: 7px 15px;
+  border: 0;
+  font-size: 13px;
+  color: #41406a;
+}
+
 input[type=tel] {
   -webkit-appearance: none;
 }
 input[type=text] {
   padding: 1px 2px;
 }
-
+input[type=text] {
+  -webkit-appearance: none;
+}
 input {
   outline: 0;
 }
@@ -318,19 +450,11 @@ ul, ol ,li {
   list-style: none;
 }
 
-span, ul, div, body, a, button, i {
+span, ul, div, body, a, button, i, p {
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: none;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
 }
 
 a, a:hover {
