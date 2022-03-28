@@ -149,7 +149,37 @@
     </div>
 
     <!-- 主内容区 -->
-    <div class="main-page container"></div>
+    <div class="main-page">
+      <div class="home-box" style="margin-top: 0px;">
+        <div class="home-slider">
+          <!-- 左侧职位选择 -->
+          <div class="job-menu">
+            <dl>
+              <dd>
+                <i class="icon-arrow-right"></i>
+                <b>技术</b>
+                <a href="https://www.zhipin.com/c101110100-p100101/">Java</a>
+                <a href="https://www.zhipin.com/c101110100-p100103/">PHP</a>
+                <a href="https://www.zhipin.com/c101110100-p100901/">web前端</a>
+                <a href="https://www.zhipin.com/c101110100-p100120/">算法工程师</a>
+              </dd>
+            </dl>
+            <div class="menu-line"></div>
+            <div class="menu-sub" style="margin-top: -5px;">
+              <p class="menu-article">技术</p>
+              <ul>
+                <li>
+                  <h4>后端开发</h4>
+                  <div class="text">
+                    <a href="https://www.zhipin.com/c101110100-p100101/">Java</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- 底部Footer -->
     <div class="footer container"></div>
@@ -157,5 +187,21 @@
     <!-- 底部链接区 -->
     <div class="footer-links container"></div>
   </div>
+
+  <script type="text/javascript">
+    var dls = document.getElementsByTagName('dl');
+    for (var index = 0; index < dls.length; index++) {
+      var dl = dls[index];
+      (function (index) {
+        dl.onmouseover = function() {
+          this.classList.add('cur');
+        }
+        dl.onmouseout = function() {
+          this.classList.remove('cur');
+        }
+      }(index));
+    }
+
+  </script>
 </body>
 </html>
