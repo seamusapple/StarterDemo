@@ -393,7 +393,7 @@ body {
   background-position: 2px-544px;
 }
 
-.icon-arrow-down {
+.icon-arrow-down, .search-box .btn-search {
   display: inline-block;
   background-image: url(../images/icons.png);
   background-repeat: no-repeat;
@@ -431,6 +431,35 @@ body {
   border: 0;
   font-size: 13px;
   color: #41406a;
+}
+
+.fast-search .btn-search {
+  background-color: #5dd5c8;
+}
+
+.fast-search .btn-search {
+  height: 50px;
+  line-height: 50px;
+  background-image: none;
+  font-size: 16px;
+  width: 140px;
+  float: right;
+}
+
+.btn-search {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  background: #55cbc4;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 90px;
+  padding: 0;
+  min-width: 0;
+  background-position: 34px -138px;
+  min-width: 0;
 }
 
 input[type=tel] {
