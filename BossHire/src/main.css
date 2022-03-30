@@ -28,6 +28,21 @@ dd {
   margin-inline-start: 40px;
 }
 
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
 body {
   font: 14px/1.5 arial, verdana, helvetica, 'PingFang SC', 'HanHei SC', STHeitiSC-Light, Miscrosoft Yahei, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -674,6 +689,60 @@ body {
   z-index: 11;
 }
 
+.home-main {
+  margin-left: 400px;
+  min-width: 697px;
+}
+
+.slider-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.promotion-main {
+  font-size: 0;
+  line-height: 0;
+  height: 340px;
+  position: relative;
+}
+
+.promotion-main table {
+  width: 100%!important;
+  table-layout: fixed;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.promotion-main tr {
+  min-height: 114px;
+}
+
+.promotion-main td {
+  padding-right: 2px;
+  padding-bottom: 2px;
+  width: auto;
+  vertical-align: top;
+}
+
+.promotion-main td a {
+  display: block;
+  width: 100%!important;
+}
+
+.promotion-main td a:hover {
+  background-color: #000;
+}
+
+.promotion-main td a:hover img {
+  opacity: .9;
+}
+.promotion-main td img {
+  display: block;
+  width: 100%!important;
+}
+
 input[type=tel] {
   -webkit-appearance: none;
 }
@@ -691,7 +760,7 @@ ul, ol ,li {
   list-style: none;
 }
 
-span, ul, div, body, a, button, i, p, dl, dd, b, h4 {
+span, ul, div, body, a, button, i, p, dl, dd, b, h4, td {
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
@@ -704,6 +773,11 @@ a, a:hover {
 
 a:hover {
   color: #00d7c6;
+}
+
+a {
+  text-decoration: none;
+  color: #414a60;
 }
 
 img {
