@@ -1046,8 +1046,9 @@
         </div>
 
         <!-- 职位tab列表 -->
-        <div class="common-tab-box merge-city-box">
+        <div class="common-tab-box merge-city-job">
           <div class="box-title">热招职位</div>
+          
           <h3>
             <span class="cur"> IT·互联网 </span>
             <span class> 金融 </span>
@@ -1059,6 +1060,41 @@
             <span class> 供应链·物流 </span>
             <span class> 采购贸易 </span>
           </h3>
+
+          <ul class="cur">
+            <li>
+              <div class="sub-li">
+                <a href="https://www.zhipin.com/job_detail/33549c151d1b008e1HR90tu6GFM~.html" target="_blank" class="job-info">
+                  <div class="sub-li-top">
+                    <p class="name">Web前端开发工程师</p>
+                    <div class="guide-app-download-icon"></div>
+                    <p class="salary">15-30K</p>
+                  </div>
+                  <p class="job-text">
+                    西安
+                    <span class="vline"></span>
+                    3-5年
+                    <span class="vline"></span>
+                    本科
+                  </p>
+                </a>
+
+                <div class="sub-li-bottom">
+                  <a href="https://www.zhipin.com/gongsi/02cd05cce753437e33V50w~~.html" class="user-info" target="_blank">
+                    <p>
+                      <img src="https://img.bosszhipin.com/beijin/upload/com/logo/20200429/8f64c9d0b30a53c434b26799ca78966cec9b49ecaf1604cb263748f03d5c2b0f.png" alt="华为" />
+                    </p>
+                  </a>
+                  <a href="https://www.zhipin.com/gongsi/02cd05cce753437e33V50w~~.html" class="sub-li-bottom-company-info" target="_blank">
+                    <span class="name">华为</span>
+                    <span class="type">计算机软件</span>
+                    <span class="vline"></span>
+                    <span class="level">不需要融资</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
 
         <!-- 公司tab列表 -->
@@ -1113,7 +1149,7 @@
   </script>
 
   <script type="text/javascript">
-    var mergeCityBox = document.getElementsByClassName('merge-city-box')[0];
+    var mergeCityBox = document.getElementsByClassName('merge-city-job')[0];
     var spans = mergeCityBox.getElementsByTagName('span');
     
     for (var index = 0; index < spans.length; index++) {

@@ -759,7 +759,7 @@ table {
   overflow: hidden;
 }
 
-.wrap .merge-city-box {
+.wrap .merge-city-job {
   width: 100%;
   overflow: hidden;
 }
@@ -820,6 +820,186 @@ table {
   height: 3px;
 }
 
+.wrap .common-tab-box ul.cur {
+  display: block;
+}
+
+.wrap .common-tab-box ul {
+  font-weight: 400;
+  display: none;
+  width: 110%;
+  overflow: hidden;
+}
+
+.wrap .merge-city-job ul {
+  overflow: hidden;
+}
+
+.wrap .merge-city-job ul li {
+  height: 130px;
+  width: 384px;
+  float: left;
+  margin: 0 16px 16px 0;
+  background: #fff;
+}
+
+.wrap .merge-city-job li .sub-li {
+  display: block;
+  height: 130px;
+  width: 384px;
+  font-size: 0;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+.wrap .merge-city-job .sub-li a.job-info {
+  padding: 0;
+  width: 100%;
+}
+
+.wrap .merge-city-job li a.job-info {
+  padding-top: 17px;
+  vertical-align: middle;
+}
+
+.wrap .merge-city-job li a {
+  display: inline-block;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-top .name {
+  position: relative;
+  max-width: 200px;
+  font-size: 15px;
+  color: #414a60;
+  margin-right: 8px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .merge-city-job li p {
+  line-height: 35px;
+  font-size: 16px;
+  color: #61687c;
+  position: relative;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-top .guide-app-download-icon {
+  display: inline-flex;
+  width: 15px;
+  height: 13px;
+  background: url("https://static.zhipin.com/zhipin-geek/v508/web/geek/images/guide-add-download-icon.png");
+  background-size: 100% 100%;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-top .salary {
+  font-size: 15px;
+  color: #fd7240;
+  line-height: normal;
+  flex: 1;
+  text-align: right;
+  max-width: none;
+}
+
+.wrap .merge-city-job li .salary {
+  color: #fc6c38;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .merge-city-job li a.job-info p.job-text {
+  font-size: 13px;
+  color: #8d92a1;
+  padding-right: 0;
+  line-height: 28px;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-bottom {
+  border-top: 1px solid #eef0f5;
+  display: flex;
+  margin-top: 8px;
+  padding-top: 12px;
+}
+
+.wrap .merge-city-job .sub-li-bottom a.user-info {
+  margin: 0;
+}
+.wrap .merge-city-job a.user-info {
+  vertical-align: center;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.wrap .merge-city-job li a {
+  display: inline-block;
+}
+
+.wrap .merge-city-job .user-info p {
+  font-size: 14px;
+  width: auto;
+  padding-right: 0;
+  border: 1px solid #f3f5fb;
+  border-radius: 4px;
+  line-height: normal;
+}
+
+.wrap .merge-city-job .sub-li-bottom .user-info img {
+  width: 30px;
+  height: 30px;
+}
+.wrap .merge-city-job .user-info img {
+  width: 58px;
+  height: 58px;
+  vertical-align: middle;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-bottom .sub-li-bottom-company-info {
+  font-size: 13px;
+  color: #8d92a1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-bottom .sub-li-bottom-company-info .name {
+  margin-left: 10px;
+  margin-right: 20px;
+  color: #61687c;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-bottom .sub-li-bottom-company-info .type {
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .merge-city-job li .sub-li .sub-li-bottom .sub-li-bottom-company-info .level {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 input[type=tel] {
   -webkit-appearance: none;
 }
@@ -831,6 +1011,15 @@ input[type=text] {
 }
 input {
   outline: 0;
+}
+
+.vline {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  vertical-align: middle;
+  background: #e0e0e0;
+  margin: 0 10px;
 }
 
 ul, ol ,li {
