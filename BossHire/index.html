@@ -339,7 +339,7 @@
                 <i class="icon-arrow-right"></i>
                 <b>设计</b>
                 <a href="https://www.zhipin.com/c101110100-p120105/">UI设计师</a>
-                <a href="https://www.zhipin.com/c101110100-p120106/">平面设计/VP</a>
+                <a href="https://www.zhipin.com/c101110100-p120106/">平面设计</a>
                 <a href="https://www.zhipin.com/c101110100-p120201/">交互设计师</a>
               </dd>
 
@@ -649,7 +649,7 @@
               <dd>
                 <i class="icon-arrow-right"></i>
                 <b>人事/财务/行政</b>
-                <a href="https://www.zhipin.com/c101110100-p150104/">人力资源专员/助力</a>
+                <a href="https://www.zhipin.com/c101110100-p150104/">人力资源专员/助理</a>
                 <a href="https://www.zhipin.com/c101110100-p150204/">行政主管</a>
               </dd>
 
@@ -951,7 +951,7 @@
                 <dd>
                   <i class="icon-arrow-right"></i>
                   <b>人事/财务/行政</b>
-                  <a href="https://www.zhipin.com/c101110100-p150104/">人力资源专员/助力</a>
+                  <a href="https://www.zhipin.com/c101110100-p150104/">人力资源专员/助理</a>
                   <a href="https://www.zhipin.com/c101110100-p150204/">行政主管</a>
                 </dd>
   
@@ -1044,6 +1044,25 @@
             </div>
           </div>
         </div>
+
+        <!-- 职位tab列表 -->
+        <div class="common-tab-box merge-city-box">
+          <div class="box-title">热招职位</div>
+          <h3>
+            <span class="cur"> IT·互联网 </span>
+            <span class> 金融 </span>
+            <span class> 房地产·建筑 </span>
+            <span class> 教育培训 </span>
+            <span class> 娱乐传媒 </span>
+            <span class> 医疗健康 </span>
+            <span class> 法律咨询 </span>
+            <span class> 供应链·物流 </span>
+            <span class> 采购贸易 </span>
+          </h3>
+        </div>
+
+        <!-- 公司tab列表 -->
+        <div class="common-tab-box hot-compony-box"></div>
       </div>
     </div>
 
@@ -1055,16 +1074,16 @@
   </div>
 
   <script type="text/javascript">
-    var dls = document.getElementsByTagName('dl');
+    var spans = document.getElementsByTagName('dl');
     var subMenu = document.getElementsByClassName('menu-sub');
-    for (var index = 0; index < dls.length; index++) {
-      var dl = dls[index];
+    for (var index = 0; index < spans.length; index++) {
+      var span = spans[index];
       (function (index) {
-        dl.onmouseover = function() {
+        span.onmouseover = function() {
           this.classList.add('cur');
           subMenu[index].style.display = 'block';
         }
-        dl.onmouseout = function() {
+        span.onmouseout = function() {
           this.classList.remove('cur');
           subMenu[index].style.display = 'none';
         }
@@ -1072,7 +1091,7 @@
     }
   </script>
 
-  <script>
+  <script type="text/javascript">
     var showAlls = document.getElementsByClassName('show-all');
     var allBoxes = document.getElementsByClassName('all-box');
     for (var index = 0; index < showAlls.length; index++) {
@@ -1090,6 +1109,27 @@
           allBoxes[i].style.display = 'none';
         }
       }
+    }
+  </script>
+
+  <script type="text/javascript">
+    var mergeCityBox = document.getElementsByClassName('merge-city-box')[0];
+    var spans = mergeCityBox.getElementsByTagName('span');
+    
+    for (var index = 0; index < spans.length; index++) {
+      var span = spans[index];
+      (function (index) {
+        span.onclick = function() {
+          for (var i = 0; i < spans.length; i++) {
+            if (i == index) {
+              this.classList.add('cur');
+            } else {
+              spans[i].classList.remove('cur');
+            }
+          }
+          // subMenu[index].style.display = 'block';
+        }
+      }(index));
     }
   </script>
 </body>
