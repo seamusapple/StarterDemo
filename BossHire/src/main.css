@@ -1000,6 +1000,15 @@ table {
   white-space: nowrap;
 }
 
+.wrap .common-tab-more .btn {
+  width: 216px;
+  font-size: 15px;
+  height: 32px;
+  line-height: 32px;
+  background: #5dd5c8;
+  color: #fff;
+}
+
 input[type=tel] {
   -webkit-appearance: none;
 }
