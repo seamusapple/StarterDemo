@@ -1000,6 +1000,11 @@ table {
   white-space: nowrap;
 }
 
+.wrap .common-tab-more {
+  margin-top: 4px;
+  text-align: center;
+}
+
 .wrap .common-tab-more .btn {
   width: 216px;
   font-size: 15px;
@@ -1007,6 +1012,188 @@ table {
   line-height: 32px;
   background: #5dd5c8;
   color: #fff;
+}
+
+.wrap .common-tab-box {
+  clear: both;
+  margin-top: 37px;
+  overflow: hidden;
+}
+
+.wrap .common-tab-box .box-title {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.wrap .common-tab-box ul.cur {
+  display: block;
+}
+
+.wrap .common-tab-box ul {
+  font-weight: 400;
+  display: none;
+  width: 110%;
+  overflow: hidden;
+}
+
+.hot-company-box ul li {
+  height: 386px;
+  width: 384px;
+  float: left;
+  margin: 0 16px 16px 0;
+  padding: 20px 0;
+  background: #fff;
+}
+
+.hot-company-box ul li .company-info-top {
+  display: block;
+  margin-bottom: 10px;
+  height: 46px;
+  padding:0 20px;
+  overflow: hidden;
+}
+
+.hot-company-box ul li .company-info-top .company-img {
+  height: 46px;
+  width: 46px;
+  line-height: 46px;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+}
+
+.hot-company-box ul li .company-info-top .company-img img {
+  max-width: 100%;
+  min-height: 100%;
+  vertical-align: middle;
+}
+
+.hot-company-box ul li .company-info-top .company-info {
+  float: left;
+  margin-left: 16px;
+  width: 282px;
+}
+
+.hot-company-box ul li .company-info-top h3 {
+  height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #414a60;
+  line-height: 22px;
+  margin: 0 0 7px 0;
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hot-company-box ul li .company-info-top p {
+  height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8d92a1;
+  line-height: 17px;
+}
+
+.hot-company-box ul li .company-job-list {
+  display: block;
+}
+
+.hot-company-box li .company-job-list {
+  padding: 0 20px;
+}
+
+.hot-company-box li .company-job-item {
+  display: block;
+  height: 98px;
+  width: 344px;
+  font-size: 0;
+  padding: 16px 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.hot-company-box li .company-job-item .job-info {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+.hot-company-box li .company-job-item .job-info-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.hot-company-box li .company-job-item .job-info .name {
+  position: relative;
+  max-width: 200px;
+  font-size: 15px;
+  color: #41406a;
+  margin-right: 8px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all linear 0.2s;
+}
+
+.hot-company-box li .company-job-item .guide-app-download-icon {
+  display: flex;
+  width: 15px;
+  height: 13px;
+  background: url(https://static.zhipin.com/zhipin-geek/v508/web/geek/images/guide-add-download-icon.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.hot-company-box li .company-job-item .job-info .salary {
+  font-size: 15px;
+  color: #fd7240;
+  line-height: normal;
+  flex: 1;
+  text-align: right;
+  max-width: none;
+}
+
+.hot-company-box li .company-job-item .job-text {
+  font-size: 13px;
+  color: #8d92a1;
+  padding-right: 0;
+  line-height: 28px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hot-company-box li .company-job-item .job-text span {
+  display: inline-block;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8d92a1;
+  line-height: 17px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  background-color: #f8f9fc;
+}
+
+.hot-company-box ul li .more-job-btn {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 34px;
+  text-align: center;
+  border: 1px solid #5dd5c8;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #00c2b3;
+  transition: all linear 0.2s;
 }
 
 input[type=tel] {
