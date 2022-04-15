@@ -1,0 +1,22 @@
+h1 {
+  color: orange;
+  background-color: slategrey;
+  text-decoration: underline;
+}
+
+p {
+  color: slategrey;
+  column-count: 3;
+  column-gap: 60px;
+}
+
+ul {
+  border-width: 4px;
+  border-style: solid;
+  border-color: crimson;
+}
+
+li {
+  list-style-type: none;
+  text-shadow: 2px 2px lightgrey;
+}
