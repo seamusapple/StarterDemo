@@ -1,22 +1,65 @@
-h1 {
-  color: orange;
-  background-color: slategrey;
-  text-decoration: underline;
+/* p.error {
+  color: red;
+}
+
+p.success {
+  color: rgb(49, 155, 49);
+}
+
+p.success.feedback {
+  border: 1px dashed #81231a;
+}
+
+#content {
+  background-color: #dfb7b74e;
+} */
+
+/* div .error {
+  color: red;
+} */
+
+/* a[href] {
+  background-color: #3dd13d;
+}
+
+a[href='https://www.zhipin.com/']
+{
+  background-color: #4879f4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a[href*="google"] {
+  background-color: #f44865;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a[href$="com.cn/"] {
+  background-color: #4e565b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #1e1806;
+} */
+
+div {
+  color: grey;
+  border: 1px solid #1e1806;
+  margin: 40px;
 }
 
 p {
-  color: slategrey;
-  column-count: 3;
-  column-gap: 60px;
+  border: inherit;
+  margin: inherit;
+  color: crimson;
 }
 
-ul {
-  border-width: 4px;
-  border-style: solid;
-  border-color: crimson;
-}
-
-li {
-  list-style-type: none;
-  text-shadow: 2px 2px lightgrey;
+p {
+  color: orange;
 }
