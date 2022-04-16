@@ -112,20 +112,3 @@ button {
     transform: translateY(650px) rotateZ(75deg);
   }
 }
-/* BASKET BASE STYLES */
-header {
-  padding: 10px 20px;
-  border-bottom: 1px solid #eee;
-  background: #fff;
-}
-
-header::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-
-.basket ul {
-  padding: 0;
-  margin-top: 40px;
-}
