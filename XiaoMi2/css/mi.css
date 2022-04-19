@@ -140,3 +140,35 @@ ul li {
   background-color: #fff;
 }
 /* 小米搜索栏布局结束 */
+
+/* 轮播图效果开始 */
+.mi4 {
+  width: 100%;
+  height: 460px;
+}
+.lbt {
+  width: 100%;
+  height: 460px;
+  background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b717c9c84e44409496e993ed6b526c05.jpg?thumb=1&w=2452&h=920&f=webp&q=90);
+  background-size: cover;
+  animation: 30s sxt infinite;
+}
+
+@keyframes sxt {
+  0% {
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b717c9c84e44409496e993ed6b526c05.jpg?thumb=1&w=2452&h=920&f=webp&q=90);
+  }
+  25% {
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e69f9bc504d70357bc58974cc1e7a05.png?thumb=1&w=2452&h=920&f=webp&q=90);
+  }
+  50% {
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a7a0fbd73e4f0f45ec66802d050f12b0.jpg?thumb=1&w=2452&h=920&f=webp&q=90);
+  }
+  75% {
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8620324582df4fb2376138363d76812a.jpg?w=2452&h=920);
+  }
+  100% {
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b158441e01e7acd9ad27a49bbac4c0fa.jpg?thumb=1&w=2452&h=920&f=webp&q=90);
+  }
+}
+/* 轮播图效果结束 */
