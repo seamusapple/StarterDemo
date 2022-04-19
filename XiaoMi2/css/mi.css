@@ -212,3 +212,27 @@ ul li {
   color: #e0e0e0;
 }
 /* 滑动门效果结束 */
+
+/* 商品信息效果开始 */
+.mi5 {
+  margin-top: 15px;
+  height: 170px;
+  width: 100%;
+}
+.mi5 .sp_div1 {
+  width: 234px;
+  height: 100%;
+  background-color: #5f5750;
+  float: left;
+}
+.mi5 .sp_div {
+  width: 316px;
+  height: 100%;
+  /* border: 1px solid crimson; */
+  float: left;
+  margin-left: 14.5px;
+}
+.mi5 .sp_div img {
+  width: 100%;
+}
+/* 商品信息效果结束 */
