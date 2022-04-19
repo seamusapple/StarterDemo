@@ -3,6 +3,9 @@
   margin: 0;
   top: 0;
 }
+ul {
+  padding: 0;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -172,3 +175,40 @@ ul li {
   }
 }
 /* 轮播图效果结束 */
+
+/* 滑动门效果开始 */
+.hdm {
+  width: 234px;
+  height: 460px;
+  background-color: rgba(105, 101, 101, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mi4 .cen {
+  position: relative;
+}
+.hdm li {
+  width: 234px;
+  height: 42px;
+  line-height: 42px;
+}
+.hdm li:first-child {
+  margin-top: 20px;
+}
+.hdm li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 30px;
+}
+.hdm li:hover {
+  background-color: #ff6700;
+}
+.hdm i {
+  float: right;
+  margin-right: 20px;
+  color: #e0e0e0;
+}
+/* 滑动门效果结束 */
