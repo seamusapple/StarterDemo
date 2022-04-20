@@ -30,7 +30,7 @@ ul {
 .cen {
   width: 1226px;
   height: 100%;
-  border: 1px solid crimson;
+  /* border: 1px solid crimson; */
   margin: 0 auto;
 }
 ul li {
@@ -98,7 +98,6 @@ ul li {
 .ss_left {
   height: 100px;
   width: 850px;
-  /* border: 1px solid blue; */
   float: left;
 }
 .ss_left ul {
@@ -236,3 +235,76 @@ ul li {
   width: 100%;
 }
 /* 商品信息效果结束 */
+
+/* 商品详情开始 */
+.mi6 {
+  width: 100%;
+  height: 2000px;
+  background-color: #f5f5f5;
+  margin-top: 25px;
+}
+.xmsg {
+  width: 100%;
+  height: 400px;
+}
+.xmsg h2,
+.phone h2 {
+  font-size: 22px;
+  color: #333333;
+  font-weight: 200;
+  line-height: 58px;
+}
+.xmsg div {
+  width: 234px;
+  height: 339px;
+  background-color: #fafafa;
+  float: left;
+}
+.xmsg_spxq {
+  margin-left: 14px;
+}
+/* 商品详情结束 */
+
+/* 广告位开始 */
+.ad {
+  width: 100%;
+  height: 120px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0e2b43800d3e1ef40470ac04b3e0140b.jpg?thumb=1&w=2452&h=240&f=webp&q=90);
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* 广告位结束 */
+
+/* 手机信息展示开始 */
+.phone_left {
+  width: 234px;
+  height: 614px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ac5cafc68c10ce4471869d378f594b52.png?thumb=1&w=468&h=1228&f=webp&q=90);
+  background-size: cover;
+  float: left;
+  background-color: #fff;
+}
+.phone_right {
+  width: 978px;
+  height: 614px;
+  float: right;
+}
+.phone_right div {
+  width: 234px;
+  height: 300px;
+  background-color: #fff;
+  float: left;
+  margin-bottom: 10px;
+  /* 动画效果 */
+  transition: all 0.2s linear;
+}
+.phone_xq {
+  margin-left: 14px;
+}
+.phone_right div:hover {
+  /* 向上偏移4px */
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+/* 手机信息展示结束 */
